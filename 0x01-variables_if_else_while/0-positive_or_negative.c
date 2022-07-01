@@ -7,7 +7,7 @@
 
 /**
  * main - My function checks whether a number is positive or negative
- * RETURN: my function returns zero
+ * Return: My function returns zero
 */
 
 /* betty style doc for function main goes there */
