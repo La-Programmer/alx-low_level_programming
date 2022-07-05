@@ -1,5 +1,5 @@
-#ifndef main.h
-#define main.h
+#ifndef MAIN_H
+#define MAIN_H
 #include <stdio.h>
 /**
  * _putchar - My function prints
@@ -7,26 +7,12 @@
  * Return: The function returns zero
  */
 
-int _putchar(void)
-{
-	printf("_putchar\n");
-	return (0);
-}
+int _putchar(void);
+
+/**
+ * print_alphabet - My function prints the alphabet
+ * Return: The function returns zero
+ */
 
 void print_alphabet(void);
-
-void print_alphabet(void)
-{
-	char i;
-
-	i = 'a';
-
-	while (i <= 'z')
-	{
-		_putchar(i);
-
-		i++;
-	}
-}
-
 #endif
