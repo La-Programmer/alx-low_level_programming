@@ -4,10 +4,4 @@
  * _putchar
  * Return: The function returns zero
  */
-int _putchar(void)
-{
-	printf("_putchar\n");
-
-	return (0);
-
-}
+int _putchar(void);
