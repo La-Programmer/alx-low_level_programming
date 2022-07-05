@@ -4,7 +4,7 @@
  * main - this program prints the alphabet
  * Return: the function returns zero
  */
-int print_alphabet(void)
+void print_alphabet(void)
 {
 
 	char i;
@@ -19,7 +19,5 @@ int print_alphabet(void)
 	}
 
 	putchar('\n');
-
-	return (0);
 
 }
