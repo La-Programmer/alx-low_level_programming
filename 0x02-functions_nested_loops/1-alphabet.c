@@ -1,23 +1,18 @@
-#include <stdio.h>
 #include "main.h"
-/**
- * main - this program prints the alphabet
- * Return: the function returns zero
+/** print_alphabet - This function prints the alphabet
+ * Return: The function does not return
  */
 void print_alphabet(void)
 {
+	char a;
 
-	char i;
+	a = 'a';
 
-	i = 'a';
-
-	while (i <= 'z')
+	while (a <= 'z')
 	{
-		putchar(i);
+		_putchar(a);
 
-		i++;
+		a += 1;
 	}
-
-	putchar('\n');
-
+	_putchar('\n');
 }
