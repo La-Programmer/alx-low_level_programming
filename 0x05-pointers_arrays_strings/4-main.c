@@ -20,7 +20,7 @@ int main(void)
 
 
 
-    str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
+    str = "Holberton!";
 
     print_rev(str);
 
