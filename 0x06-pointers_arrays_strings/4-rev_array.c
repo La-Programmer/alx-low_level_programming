@@ -15,19 +15,23 @@ void reverse_array(int *a, int n)
 
 	int i;
 
-	int ind;
+	int ind = n - 1;
 
-	if (n % 2 == 0)
+	int ave;
+
+	if (ind % 2 == 0)
 	{
-		ind = n;
+		ave = ind / 2;
+		ave += 1;
 	}
 	else
 	{
-		ind = n - 1;
+		ave = (ind + 1) / 2;
 	}
 
-	for (i = 0; i <= ind / 2; i++)
+	for (i = 0; i <= ave; i++)
 	{
+
 		temp = a[i];
 		a[i] = a[ind];
 		a[ind] = temp;
