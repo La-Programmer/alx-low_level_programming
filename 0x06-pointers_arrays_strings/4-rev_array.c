@@ -15,7 +15,16 @@ void reverse_array(int *a, int n)
 
 	int i;
 
-	int ind = n - 1;
+	int ind;
+
+	if (n % 2 == 0)
+	{
+		ind = n;
+	}
+	else
+	{
+		ind = n - 1;
+	}
 
 	for (i = 0; i <= ind / 2; i++)
 	{
