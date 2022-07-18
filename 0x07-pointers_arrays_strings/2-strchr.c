@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stddef.h>
 /**
  * _strchr - this function searches a string for a character.
  * @s: this argument is the string to be searched.
@@ -25,5 +25,5 @@ char *_strchr(char *s, char c)
 		i++;
 	}
 
-	return (0);
+	return (NULL);
 }
