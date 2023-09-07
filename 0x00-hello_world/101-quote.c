@@ -10,9 +10,9 @@
 
 int main(void)
 {
-	const char *string = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-	size_t length = strlen(string);
-	
-	fwrite(string, sizeof(char), length, stderr);
+	char *strin = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	size_t length = strlen(strin);
+
+	fwrite(strin, sizeof(char), length, stderr);
 	return (1);
 }
