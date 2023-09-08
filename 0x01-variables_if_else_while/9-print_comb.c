@@ -9,11 +9,10 @@
 int main(void)
 {
 	int i = 0;
-	char a = '0';
 
 	while (i < 10)
 	{
-		putchar(a + i);
+		putchar('0' + i);
 		if (i != 9)
 		{
 			putchar(',');
