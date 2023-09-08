@@ -26,7 +26,7 @@ int main(void)
 			d = b;
 			while (d < 10)
 			{
-				if (b != d)
+				if (!((a + b) == (c + d)))
 				{
 					putchar('0' + a);
 					putchar('0' + b);
@@ -35,7 +35,7 @@ int main(void)
 					putchar('0' + d);
 					if ((a == 9) && (b == 8) && (c == 9) && (d == 9))
 					{
-					break;
+						break;
 					}
 					putchar(',');
 					putchar(' ');
@@ -47,7 +47,7 @@ int main(void)
 		b++;
 	}
 	a++;
-}
+	}
 putchar('\n');
 return (0);
 }
