@@ -10,44 +10,32 @@
 
 int main(void)
 {
-	int a = 0;
-	int b;
-	int c;
-	int d;
+	int num1 = 0;
+	int num2;
 
-	while (a < 10)
+	while (num1 < 100)
 	{
-	b = 0;
-	while (b < 10)
-	{
-		c = a;
-		while (c < 10)
+		num2 = num1;
+		while (num2 < 100)
 		{
-			d = b;
-			while (d < 10)
+			if (num1 != num2)
 			{
-				if (!((a + b) == (c + d)))
+				putchar('0' + (num1 / 10));
+				putchar('0' + (num1 % 10));
+				putchar(' ');
+				putchar('0' + (num2 / 10));
+				putchar('0' + (num2 % 10));
+				if (num1 == 98 && num2 == 99)
 				{
-					putchar('0' + a);
-					putchar('0' + b);
-					putchar(' ');
-					putchar('0' + c);
-					putchar('0' + d);
-					if ((a == 9) && (b == 8) && (c == 9) && (d == 9))
-					{
-						break;
-					}
-					putchar(',');
-					putchar(' ');
+					break;
 				}
-				d++;
+				putchar(',');
+				putchar(' ');
 			}
-			c++;
+			num2++;
 		}
-		b++;
+		num1++;
 	}
-	a++;
-	}
-putchar('\n');
-return (0);
+	putchar('\n');
+	return (0);
 }
