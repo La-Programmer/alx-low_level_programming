@@ -8,7 +8,6 @@
 *
 * Return: Character
 */
-
 int _putchar(char c);
 
 /**
@@ -16,7 +15,6 @@ int _putchar(char c);
 *
 * Return: nothing
 */
-
 void print_alphabet(void);
 
 /**
@@ -24,7 +22,6 @@ void print_alphabet(void);
 *
 * Return: nothing
 */
-
 void print_alphabet_x10(void);
 
 /**
@@ -33,7 +30,6 @@ void print_alphabet_x10(void);
 *
 * Return: 1 if true, 0 if false
 */
-
 int _islower(int c);
 
 /**
@@ -43,3 +39,34 @@ int _islower(int c);
 * Return: 1 if true, 0 if false
 */
 int _isalpha(int c);
+
+/**
+* print_sign - prints the sign of a number
+* @n: Number to be checked
+*
+* Return: 1 if positive, 0 if zero and -1 if negative
+*/
+int print_sign(int n);
+
+/**
+* _abs - Computes the absolute value of an integer
+* @: Number to be evaluated
+*
+* Return: Returns the absolute value of the inputted integer 
+*/
+int _abs(int);
+
+/**
+* print_last_digit - Prints the last digit of a number
+* @: Number to be evaluated
+*
+* Return: Returns the last digit of the input
+*/
+int print_last_digit(int);
+
+/**
+* jack_bauer - prints every minute of the day from 00:00 to 23:59
+*
+* Return: nothing
+*/
+void jack_bauer(void);
