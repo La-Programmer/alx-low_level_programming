@@ -93,3 +93,18 @@ int add (int, int);
 * Return: nothing
 */
 void print_to_98(int n);
+
+/**
+* print_times_table - Prints times table starting from 0 to n
+* @n: Number to print to
+*
+* Return: nothing
+*/
+void print_times_table(int n);
+
+/**
+* main - prints the sum of all multiples of 3 and 5 below 1024
+*
+* Returns: always 0
+*/
+int main(void);
