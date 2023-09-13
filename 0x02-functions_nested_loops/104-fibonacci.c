@@ -8,26 +8,19 @@
 
 int main(void)
 {
-	long a = 1;
-	long b = 2;
-	long c = 0;
-	long tmp, i;
+	unsigned long a = 1;
+	unsigned long b = 2;
+	unsigned long c = 0;
+	unsigned long tmp, i;
 
 	c = a + b;
-	printf("%li, %li, %li, ", a, b, c);
+	printf("%lu, %lu, %lu, ", a, b, c);
 	for (i = 0; i < 94; i++)
 	{
 		tmp = c;
 		c += b;
 		b = tmp;
-		if (c < 0)
-		{
-			printf("%li", (c * -1));
-		}
-		else
-		{
-			printf("%li", c);
-		}
+		printf("%lu", c);
 		if (i  != 93)
 		{
 			printf(", ");
