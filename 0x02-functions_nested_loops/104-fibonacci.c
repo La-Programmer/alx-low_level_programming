@@ -15,7 +15,7 @@ int main(void)
 
 	c = a + b;
 	printf("%li, %li, %li, ", a, b, c);
-	for (i = 0; i < 95; i++)
+	for (i = 0; i < 94; i++)
 	{
 		tmp = c;
 		c += b;
@@ -28,7 +28,7 @@ int main(void)
 		{
 			printf("%li", c);
 		}
-		if (i  != 94)
+		if (i  != 93)
 		{
 			printf(", ");
 		}
