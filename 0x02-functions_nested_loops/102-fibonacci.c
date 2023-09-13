@@ -8,27 +8,27 @@
 
 int main(void)
 {
-	int a = 1;
-	int b = 2;
-	int c = 0;
-	int tmp, i;
+	long a = 1;
+	long b = 2;
+	long c = 0;
+	long tmp, i;
 
 	c = a + b;
-	printf("%i, %i, %i, ", a, b, c);
-	for (i = 0; i < 49; i++)
+	printf("%li, %li, %li, ", a, b, c);
+	for (i = 0; i < 47; i++)
 	{
 		tmp = c;
 		c += b;
 		b = tmp;
 		if (c < 0)
 		{
-			printf("%i", (c * -1));
+			printf("%li", (c * -1));
 		}
 		else
 		{
-			printf("%i", c);
+			printf("%li", c);
 		}
-		if (i != 48)
+		if (i  != 46)
 		{
 			printf(", ");
 		}
