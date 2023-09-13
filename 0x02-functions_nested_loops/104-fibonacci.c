@@ -28,7 +28,7 @@ int main(void)
 		{
 			printf("%li", c);
 		}
-		if (i  != 46)
+		if (i  != 94)
 		{
 			printf(", ");
 		}
