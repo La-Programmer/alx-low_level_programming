@@ -10,7 +10,7 @@ int main(void)
 	long a = 1;
 	long b = 2;
 	long c = 0;
-	long total = 0;
+	long even = 2;
 	long tmp;
 
 	c = a + b;
@@ -21,9 +21,9 @@ int main(void)
 		b = tmp;
 		if (c % 2 == 0)
 		{
-			total += c;
+			even += c;
 		}
 	}
-	printf("%li\n", total);
+	printf("%li\n", even);
 	return (0);
 }
