@@ -1,6 +1,7 @@
 #include "main.h"
 /**
 * print_number - Prints a number
+* @n: Number to b printed
 * Return: nothing
 */
 
@@ -14,7 +15,7 @@ void print_number(int n)
 		i = -i;
 	}
 
-	if (i/10 != 0)
+	if (i / 10 != 0)
 	{
 		print_number(i / 10);
 	}
