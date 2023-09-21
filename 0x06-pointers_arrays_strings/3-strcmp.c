@@ -1,11 +1,5 @@
 #include "main.h"
 /**
-* _strlen - Gets the length of a string
-* @s: String to be counted
-* Return: Length of the string
-*/
-
-/**
 * _strcmp - Compares two strings
 * @s1: First string
 * @s2: Second string
