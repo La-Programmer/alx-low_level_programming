@@ -16,6 +16,17 @@ int _islower(char s)
 }
 
 /**
+* _isupper - Checks if a character is an uppercase alphabet
+* @s: Chracter to check
+* Return: 1 if true and 0 if false
+*/
+int _isupper(char s)
+{
+	if (s > 64 && s < 91)
+		return (1);
+	return (0);
+}
+/**
 * cap_string - Capitalizes all the words of a string
 * @str: String to be operated on
 * Return: Pointer to the destination of the string
@@ -29,14 +40,15 @@ char *cap_string(char *str)
 	{
 		for (j = 0; sep[j] != '\0'; j++)
 		{
-			if ((str[i] == sep[j]) && _islower(str[i + 1]))
+			if ((str[i] == sep[j]))
 			{
-				if (_islower(str[i + 2]))
-				{
+				if (_islower(str[i + 1]))
 					str[i + 1] -= 32;
-				}
 			}
 		}
+		if ((_isupper(str[i]) || _islower(str[i])) && _isupper(str[i + 1]))
+			str[i + 1] += 32;
+
 		i++;
 	}
 	return (str);
