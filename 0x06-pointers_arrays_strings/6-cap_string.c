@@ -1,7 +1,7 @@
 #include "main.h"
 /**
 * _islower - Checks if a character is an alphabet
-* *s: Character to be checked
+* @s: Character to be checked
 * Return: 1 if true and 0 if false
 */
 int _islower(char s)
