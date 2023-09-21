@@ -44,8 +44,11 @@ char *cap_string(char *str)
 			{
 				if (_islower(str[i + 1]))
 					str[i + 1] -= 32;
+				break;
 			}
-		}
+		}	
+		if ((_isupper(str[i]) || _islower(str[i])) && _isupper(str[i + 1]))
+			str[i + 1] += 32;
 		i++;
 	}
 	return (str);
