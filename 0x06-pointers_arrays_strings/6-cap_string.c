@@ -31,7 +31,10 @@ char *cap_string(char *str)
 		{
 			if ((str[i] == sep[j]) && _islower(str[i + 1]))
 			{
-				str[i + 1] -= 32;
+				if (_islower(str[i + 2]))
+				{
+					str[i + 1] -= 32;
+				}
 			}
 		}
 		i++;
