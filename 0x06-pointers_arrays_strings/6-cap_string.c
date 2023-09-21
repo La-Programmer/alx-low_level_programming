@@ -38,6 +38,8 @@ char *cap_string(char *str)
 
 	while (str[i] != '\0')
 	{
+		if (i == 0 && _islower(str[i]))
+			str[i] -= 32;
 		for (j = 0; sep[j] != '\0'; j++)
 		{
 			if (str[i] == sep[j])
@@ -47,8 +49,6 @@ char *cap_string(char *str)
 				break;
 			}
 		}
-		if ((_isupper(str[i]) || _islower(str[i])) && _isupper(str[i + 1]))
-			str[i + 1] += 32;
 		i++;
 	}
 	return (str);
