@@ -7,7 +7,7 @@
 */
 int _isPrime(int a, int n)
 {
-	if (n < 2 && n > -2)
+	if (n < 2)
 		return (0);
 	else if (a > (n / 2))
 		return (1);
