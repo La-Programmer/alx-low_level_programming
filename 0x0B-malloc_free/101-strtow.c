@@ -43,7 +43,7 @@ char **strtow(char *str)
 		free(t);
 		return (NULL);
 	}
-	for (i = 0, j = 0; str[i] != '\0' && (j < 3); i++)
+	for (i = 0, j = 0; str[i] != '\0' && (j < d); i++)
 	{
 		while (str[i] == ' ' || str[i] == '\t')
 			i++;
