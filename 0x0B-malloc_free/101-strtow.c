@@ -34,7 +34,7 @@ char **strtow(char *str)
 	int i, j, k, m, d = count_words(str);
 	int word_start, word_end;
 
-	if (str == NULL || str[0] == '\0')
+	if (str == NULL || str[0] == '\0' || d == 0)
 		return (NULL);
 
 	t = malloc(sizeof(char *) * (d + 1));
