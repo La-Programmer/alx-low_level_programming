@@ -4,6 +4,7 @@
 * string_nconcat - Concatenates two strings
 * @s1: First string
 * @s2: Second string
+* @n: Number of bytes of second string to copy
 * Return: Pointer to new memory space for concatenated string,
 * NULL if failure
 */
@@ -12,23 +13,31 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *t;
 	unsigned int i = 0, j;
 
-	while (s1 != NULL && s1[i] != '\0')
-		i++;
+	if (s1 != NULL)
+	{
+		while (s1[i] != '\0')
+			i++;
+	}
 
-	t = malloc(sizeof(char) * (n + i + 1));
+	t = malloc(sizeof(char) * (i + n + 1));
 	if (t == NULL)
 		return (NULL);
 
-	if (s1 != NULL)
-	{
-		for (j = 0; j < i; j++)
+		j = 0;
+		while (j < i)
+		{
 			t[j] = s1[j];
-	}
+			j++;
+		}
 
 	if (s2 != NULL)
 	{
-		for (j = 0; j < n; j++)
+		j = 0;
+		while (s2[j] != '\0' && j < n)
+		{
 			t[i + j] = s2[j];
+			j++;
+		}
 	}
 	t[i + j] = '\0';
 	return (t);
