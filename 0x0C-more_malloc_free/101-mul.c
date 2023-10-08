@@ -45,7 +45,7 @@ long int convert_num(char *str)
 */
 void print_num(long int num)
 {
-	long unsigned int i = num;
+	unsigned long int i = num;
 
 	if (num < 0)
 	{
