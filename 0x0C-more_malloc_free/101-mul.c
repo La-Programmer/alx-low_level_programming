@@ -24,10 +24,10 @@ int _isdigit(char *str)
 * @str: Input string
 * Return: Converted digits
 */
-long int convert_num(char *str)
+long long int convert_num(char *str)
 {
 	int i = 0;
-	long int result = 0;
+	long long int result = 0;
 
 	while (str[i] != '\0')
 	{
@@ -43,9 +43,9 @@ long int convert_num(char *str)
 * @num: Number to print
 * Return: Nothing
 */
-void print_num(long int num)
+void print_num(long long int num)
 {
-	unsigned long int i = num;
+	unsigned long long int i = num;
 
 	if (num < 0)
 	{
@@ -66,7 +66,7 @@ void print_num(long int num)
 */
 int main(int argc, char *argv[])
 {
-	long int i, j, result;
+	long long int i, j, result;
 
 	if (argc != 3)
 	{
