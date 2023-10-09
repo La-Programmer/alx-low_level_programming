@@ -85,7 +85,7 @@ int main(int argc, char *argv[])
 		_putchar('r');
 		_putchar('o');
 		_putchar('r');
-		_putchar('\0');
+		_putchar('\n');
 		exit(98);
 	}
 	i = convert_num(argv[1]);
