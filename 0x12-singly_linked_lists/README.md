@@ -5,3 +5,4 @@
 3. Program-2: A function that adds a node to the beginning of a list.
 4. Program-3: A function that adds a node to the end of a list.
 5. Program-4: A function that frees the memory space used for a list.
+6. Program-5: A function that prints an output before the main function runs.
