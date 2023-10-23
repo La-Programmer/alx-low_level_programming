@@ -4,3 +4,4 @@
 3. Program-2: A function that adds an element to the beginning of a list.
 4. Program-3: A function that adds an element to the end of a list.
 5. Program-4: A function that frees a list.
+6. Program-5: A function that frees a list and sets head to NULL.
