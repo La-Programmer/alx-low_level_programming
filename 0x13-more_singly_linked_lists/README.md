@@ -9,4 +9,5 @@
 8. Program-7: A function that returns the nth node of a list.
 9. Program-8: A function that returns the sum of all the data elements of a list.
 10. Program-9: A function that inserts a new node at a given position.
+11. Program-10: A function that deletes a node at an index.
 
