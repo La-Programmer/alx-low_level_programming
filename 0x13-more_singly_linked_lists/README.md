@@ -5,3 +5,5 @@
 4. Program-3: A function that adds an element to the end of a list.
 5. Program-4: A function that frees a list.
 6. Program-5: A function that frees a list and sets head to NULL.
+7. Program-6: A function that deleted the head node of a list.
+8. Program-7: A function that returns the nth node of a list.
