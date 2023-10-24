@@ -7,3 +7,5 @@
 6. Program-5: A function that frees a list and sets head to NULL.
 7. Program-6: A function that deleted the head node of a list.
 8. Program-7: A function that returns the nth node of a list.
+9. Program-8: A function that returns the sum of all the data elements of a list.
+
