@@ -10,4 +10,5 @@
 9. Program-8: A function that returns the sum of all the data elements of a list.
 10. Program-9: A function that inserts a new node at a given position.
 11. Program-10: A function that deletes a node at an index.
+12. Program-11: A function that reverses a linked list.
 
