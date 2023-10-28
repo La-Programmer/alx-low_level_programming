@@ -2,33 +2,35 @@
 #include <string.h>
 #include <stdlib.h>
 /**
-* pow - Calculates the exponent of specified base and power
-* @base: Base
-* @exp: Exponent
-* Return: Result of exponentiation
-*/
-unsigned int exponent(int base, int exp)
+ * exponent - Calculates the exponent of specified base and power
+ * @base: Base
+ * @exp: Exponent
+ * Return: Result of exponentiation
+ */
+unsigned long int exponent(int base, int exp)
 {
 	int counter = 1;
-	int holder = base;
+	unsigned long int result = 0;
 
 	if (exp == 0)
 		return (1);
-	while (counter != exp)
+	result = 1;
+	while (counter <= exp)
 	{
-		base *= holder;
+		result *= base;
 		counter++;
 	}
-	return (base);
+	return (result);
 }
 /**
-* binary_to_uint - Converts a binary number to an unsigned integer
-* @b: String pointer to a string containing binary digits
-* Return: Converted number or 0 if FAILURE
-*/
+ * binary_to_uint - Converts a binary number to an unsigned integer
+ * @b: String pointer to a string containing binary digits
+ * Return: Converted number or 0 if FAILURE
+ */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int result = 0, counter = 0, power;
+	unsigned int result = 0, counter = 0;
+	unsigned long int power;
 
 	if (b == NULL)
 		return (0);
