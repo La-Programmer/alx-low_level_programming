@@ -23,7 +23,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	{
 		item->next = ht->array[index];
 		ht->array[index] = item;
-	}	
+	}
 	else
 	{
 		item->next = c_item;
