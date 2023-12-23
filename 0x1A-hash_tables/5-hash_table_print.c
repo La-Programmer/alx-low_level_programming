@@ -19,8 +19,8 @@ void hash_table_print(const hash_table_t *ht)
 		if (ht->array[index] != NULL)
 		{
 			if (printed)
-				putchar(',');
-			printf(" '%s': '%s'", ht->array[index]->key, ht->array[index]->value);
+				printf(", ");
+			printf("'%s': '%s'", ht->array[index]->key, ht->array[index]->value);
 			printed = 1;
 		}
 		index++;
