@@ -28,7 +28,7 @@ void hash_table_delete(hash_table_t *ht)
 
 /**
  * free_list - Frees a linked list
- * @current: Current node
+ * @head: Current node
  *
  * Return: Nothing
  */
