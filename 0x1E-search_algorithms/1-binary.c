@@ -18,9 +18,8 @@ void custom_arr_print(int *array, int start, int end)
 		printf("%d", array[start]);
 		if (start != end)
 			printf(", ");
-		else
-			puts("\n");
 	}
+	printf("\n");
 }
 
 /**
