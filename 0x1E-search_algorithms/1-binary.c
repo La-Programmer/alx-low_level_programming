@@ -13,10 +13,10 @@
 void custom_arr_print(int *array, int start, int end)
 {
 	printf("Searching in array: ");
-	for (; start < end; start++)
+	for (; start <= end; start++)
 	{
 		printf("%d", array[start]);
-		if (start != end - 1)
+		if (start != end)
 			printf(", ");
 		else
 			puts("\n");
@@ -37,28 +37,29 @@ int binary_search(int *array, size_t size, int value)
 {
 	int m;
 	int l = 0;
-	int r = size;
+	int r = size - 1;
 	int result = -1;
 
-	while ((r - l) > 1)
+	while ((r - l) > 0)
 	{
 		m = (l + r) / 2;
-		printf("Current value of m: %d\n", m);
+		/*printf("Current value of m: %d\n", m);*/
 		custom_arr_print(array, l, r);
-		if (array[m] < value)
+		if (array[m] <= value)
 		{
 			l = m + 1;
 			/*printf("New value of l: %d\n", l);*/
 		}
 		else
 		{
-			r = m + 1;
+			r = m - 1;
 			/*printf("New value of r: %d\n", r);*/
 		}
 
 		if (array[m] == value)
 			result = m;
 	}
-
+	if (result == -1)
+		custom_arr_print(array, l, r);
 	return (result);
 }
