@@ -1,0 +1,41 @@
+BINARY SEARCH ALGORITHM
+ASSUMPTIONS:
+    1. The array is sorted in ascending order
+    2. No number is repeated in the array
+
+Given an array {3, 8, 9, 14, 23, 60, 75, 64, 90}
+In order to apply binary search I am taking note of a few things:
+1. The length of the array is an odd one (it can be even).
+2. This means that there will be a number left in the middle after the initial division (in some cases it will not be).
+-------ILLUSTRATION---------
+Divding our array by 2 will give;
+                 |    |
+    {3, 8, 9, 14 | 23 | 60, 75, 64, 90}
+                 |    |
+3. What would happen in subsequent divisions?
+    Well there are two ways to do this:
+        A less than or equal to comparison with the middle man or a greater than or equal to comparison with the middle. I will choose the <= comparison.
+4. Depending on the comparison that decides the array index to take as the next input
+    How do we take these array inputs:
+        There are 4 possible scenarios:
+            i. The array length is odd (i.e there is a middle man) and the value to find is less than or equal to the middle man in which case we take {array[0:(2 / array.length) + 1]}
+
+            ii. The array length is odd and the value is > the middle man in which case we take {array[(2 / array.length) + 2: -1 or size]}
+
+            iii. The array length is even (i.e there is no middle man) and the value to find is in the lesser half of the array in which case we take {array[0:2 / array.length]}
+
+            iv. The array length is even and the value to find is in the greater half of the array in which case we take {array[(2 / array.length) + 1]: -1 size}
+NOTE (I will have to implement the slicing function myself)
+
+WHILE THE ABOVE REASONING IS NOT WRONG
+THE REQUIREMENT OF MY PROJECT SAYS THAT I NEED TO RETURN THE INDEX
+So let me look at a different view
+
+Given an array {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Taking variable l as 0 and r as 9, declare variable m as middle value
+
+While (array[m = (l + r) / 2] is not equal to value);
+    if array[m] < value:
+        l = m + 1
+    else
+        r = m
