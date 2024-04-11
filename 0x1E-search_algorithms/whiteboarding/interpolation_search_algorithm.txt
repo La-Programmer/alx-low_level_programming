@@ -1,0 +1,23 @@
+INTERPOLATION SEARCH
+The time complexity of interpolation is dependent on two things;
+1. The array is sorted in ascending order
+2. The uniformity of the array is high (i.e; The numerical distance between the elements of the array is uniform to some extent)
+
+Interpolation formula; size_t pos = low + (((double)(high - low) / (array[high] - array[low])) * (value - array[low]))
+
+INPUTS: array, size, value
+EXPECTED OUTPUT: First index where value is located
+
+PROCESS;
+Declare variables; pos, high, low.
+
+While (array[pos] != value || high != low)
+    pos = low + (((double)(high - low) / (array[high] - array[low])) * (value - array[low]))
+    printf("Value checked array[%d] = [%d]", pos, array[pos])
+    if (array[pos] == value)
+        return pos
+    else if (array[pos] > value)
+        high = pos - 1
+    else
+        low = pos + 1
+return -1
