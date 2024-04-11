@@ -35,8 +35,8 @@ int interpolation_search(int *array, size_t size, int value)
 	int high = size - 1, low = 0, result = -1;
 	size_t pos;
 
-    if (array == NULL)
-        return (result);
+	if (array == NULL)
+		return (result);
 	while (array[pos = calc_pos(array, low, high, value)] != value || high != low)
 	{
 		if (pos >= size)
