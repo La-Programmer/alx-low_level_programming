@@ -62,6 +62,10 @@ int binary_search(int *array, size_t size, int value)
 			result = m;
 	}
 	if (result == -1)
+	{
 		custom_arr_print(array, l, r);
+		if (array[l] == value)
+			result = l;
+	}
 	return (result);
 }
