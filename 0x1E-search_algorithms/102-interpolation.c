@@ -33,10 +33,12 @@ int calc_pos(int *array, int low, int high, int value)
 int interpolation_search(int *array, size_t size, int value)
 {
 	int high = size - 1, low = 0, result = -1;
-	size_t pos = calc_pos(array, low, high, value);
+	size_t pos;
 
 	if (array == NULL)
 		return (result);
+
+	pos = calc_pos(array, low, high, value);
 	if (pos >= size)
 	{
 		printf("Value checked array[%lu] is out of range\n", pos);
